@@ -1,0 +1,2 @@
+# moocHelsinki
+Eclipse / GitHub integration
