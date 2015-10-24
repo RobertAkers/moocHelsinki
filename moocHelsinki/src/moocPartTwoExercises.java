@@ -117,79 +117,104 @@ public class moocPartTwoExercises {
 		// Exercise 34
 
 		/*
-		Scanner newScanner = new Scanner(System.in);
+		 * Scanner newScanner = new Scanner(System.in);
+		 * 
+		 * System.out.println("Type a number: "); int takeInt =
+		 * Integer.parseInt(newScanner.nextLine());
+		 * 
+		 * int i = 1; int sumInt = 1 ; while (i <= takeInt) { i++;
+		 * 
+		 * sumInt = sumInt * i;
+		 * 
+		 * 
+		 * if (i == takeInt) { System.out.println(sumInt); break; }
+		 * 
+		 * }
+		 */
 
-		System.out.println("Type a number: ");
-		int takeInt = Integer.parseInt(newScanner.nextLine());
+		// Exercise 35
 
-		int i = 1;
-		int sumInt = 1
-				;
-		while (i <= takeInt) {
-			i++;
-			
-			sumInt = sumInt * i;
-			
+		/*
+		 * Scanner newScanner = new Scanner(System.in);
+		 * 
+		 * System.out.println("Type a number: "); int newInt =
+		 * Integer.parseInt(newScanner.nextLine());
+		 * 
+		 * int i = 0; int value = 0;
+		 * 
+		 * while (i <= newInt) { value = (int) Math.pow(2, i) + value; i++; }
+		 * 
+		 * System.out.println("The result is: " + value);
+		 * 
+		 * 
+		 * 
+		 * 
+		 * Scanner newScanner2 = new Scanner(System.in);
+		 * 
+		 * System.out.println("Type a number: "); int newInt2 =
+		 * Integer.parseInt(newScanner2.nextLine());
+		 * 
+		 * int i2 = 0; int value2 = 0;
+		 * 
+		 * while (i2 <= newInt2) { value2 = (int)Math.pow(2, i2) + value2; i2++;
+		 * if(i2 == newInt2){
+		 * 
+		 * System.out.println("The result is: " + value2); break;
+		 */
+		/*
+		 * }
+		 * 
+		 * }
+		 */
 
-			if (i == takeInt) {
-				System.out.println(sumInt);
+		// Exercise 36
+
+	/*	Scanner newScanner = new Scanner(System.in);
+
+		int typeNumbers = 0;
+		int typeSum = 0;
+		int amountNum = 0;
+		int returnRight = 0;
+		double averageNum;
+		int evenNum = 0;
+		int oddNum = 0;
+
+		System.out.println("Type numbers: ");
+		while (typeNumbers != -1) {
+
+			typeNumbers = Integer.parseInt(newScanner.nextLine());
+			if (typeNumbers % 2 == 0) {
+				evenNum++;
+			} else {
+				oddNum++;
+			}
+			amountNum++;
+			typeSum = typeSum + typeNumbers;
+
+			if (typeNumbers == -1) {
+				typeSum++;
+				amountNum--;
+				oddNum--;
+				averageNum = (double) typeSum / amountNum;
+				System.out.println("Thank you and see you later!");
+				System.out.println("The sum is " + typeSum);
+				System.out.println("How many numbers: " + amountNum);
+				System.out.println("Average: " + averageNum);
+				System.out.println("Even Numbers: " + evenNum);
+				System.out.println("Odd Numbers:" + oddNum);
 				break;
 			}
-
 		}*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
-		
-		//Exercise 35
-		
-		
-		
-		
-		
-		Scanner newScanner = new Scanner(System.in);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
