@@ -1,31 +1,45 @@
 import java.util.Scanner;
+import java.io.*;
 
-public class MoocMethodWork {
 
-	// Exercises 12 and 13 - Methods
-	// Methods are called within below the outermost brackets
-	// but outside of the main method
 
-	// Creating a method called greet
+		public class MoocMethodWork {
 
-	public static void main(String[] args) {
+			/**
+			 * Performs various string operations on the name John Fitzgerald
+			 * Kennedy.
+			 * 
+			 * @param arg
+			 *            is not used.
+			 */
+			public static void main(String[] args) {
+				String first = "John";
+				String middle = "Fitzgerald";
+				String last = "Kennedy";
+				String initials;
+				String firstInit, middleInit, lastInit;
 
-		
-	//Exercises 37 and 38	
-		
-		System.out.println("How many? ");
-		printText();
+				firstInit = first.substring(0, 1);
+				middleInit = middle.substring(0, 1);
+				lastInit = last.substring(0, 1);
+				initials = firstInit.concat(middleInit);
+				initials = initials.concat(lastInit);
 
-	}
+				System.out.println();
+				System.out.println(first + " " + middle + " " + last + " ");
+				System.out.println(initials);
+				System.out.println(last + ", " + first + " " + middle);
+				System.out.println(last + ", " + first + " " + middleInit + ".");
+				System.out.println(first.toUpperCase() + " " + last.toUpperCase());
 
-	public static void printText() {
-		Scanner newScanner = new Scanner(System.in);
-		int i = 1;
-		int howMany = Integer.parseInt(newScanner.nextLine());
-		while (i <= howMany) {
-			System.out.println("In the beginning there were the swamp, the hoe and Java.");
-			i++;
+				System.out.println(first + " equals john is " + first.equals("john"));
+				System.out.println(first + " equals john (ignoring case) is " + first.equalsIgnoreCase("john"));
+				System.out.println("The character at index 3 in " + middle + " is " + middle.substring(3, 1));
+				System.out.println("The index of \"gerald\" within " + middle + " is " + middle.indexOf("gerald"));
+				System.out.println("The index of \"gerald\" within " + last + " is " + last.indexOf("gerald"));
+
+				System.out.println();
+			}
 		}
+	
 
-	}
-}
